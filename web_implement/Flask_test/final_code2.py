@@ -25,7 +25,7 @@ from PIL import Image,ImageFilter
 
 def conversion(file):
 
-    pic = Image.open(file)
+    pic = Image.open(file)# method to open and identify the image file
     imgGray = pic.convert('L')# converting the image to grayscale
     imgGray = imgGray.resize((1191, 2000))# resizing the image
     im2 = imgGray.filter(ImageFilter.UnsharpMask(radius = 6.1, threshold = 10, percent = 172))
