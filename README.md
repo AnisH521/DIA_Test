@@ -1,6 +1,32 @@
 # DIA_Test
 Document image analysis test :  using easyocr and pytesseract
 
+<h3 align="left">Dataset Used</h3>
+
+various bills and invoices from restaurants and shops
+
+<h3 align="left">python version</h3>
+
+<img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/numpy">
+
+<h3 align="left">Libraries Used</h3>
+
+numpy
+
+easyocr
+
+opencv
+
+pillow
+
+streamlit
+
+<h3 align="left">Description</h3>
+
+In this project I have tried to recognise text from Image data usually invoices
+using easyocr, I have also preprocessed the image using opencv
+and after that I have done the web hosting using streamlit and deployed it on huggingface
+
 **Dilation**
 
 This operations consists of convolving an image A with some kernel ( B), which can have any shape or size, usually a square or circle. 
@@ -25,3 +51,7 @@ We should specify the width and height of the kernel which should be positive an
 We also should specify the standard deviation in the X and Y directions, sigmaX and sigmaY respectively. 
 If only sigmaX is specified, sigmaY is taken as the same as sigmaX. 
 If both are given as zeros, they are calculated from the kernel size. Gaussian blurring is highly effective in removing Gaussian noise from an image.
+
+**Link to huggingface**
+
+https://huggingface.co/spaces/Anish521/Image_To_Txt
